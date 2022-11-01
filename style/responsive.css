@@ -13,9 +13,7 @@
   .inner_r5 {
     grid-template-columns: 1fr 1fr;
   }
-  .child-item_r5:nth-child(3){
-    display: none;
-  }
+  
 }
   
 
