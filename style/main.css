@@ -48,8 +48,9 @@ body{
     position: relative;
     float: left;
     position: relative;
-    text-align: center; 
+    text-align: center;
 }
+
 #mini_menu ul li::after{
     position: absolute;
     content: "";
@@ -66,13 +67,17 @@ body{
 }
 
 #mini_menu ul a{
-    color: #fff;
+    color: #f5f6fa;
     display: block;
     font-size: 12px;
     margin: 0;
     padding: 20px;
     text-decoration: none;
     font-family: georgia;
+
+}
+#mini_menu ul a:hover{
+    color: #dcdde1;
 
 }
 
@@ -97,11 +102,13 @@ body{
 }
 #search_area{
     width: 300px;
+    /* border: 1px solid #fff; */
 }
 #search_area form input{
     font-size: 13px;
     background-color: #65717c;
     border: none;
+    outline: none;
     padding: 5px;
     width:65%;
     color: #fff;
@@ -177,7 +184,7 @@ body{
     slider
 -------------------- */
 .inner_row1{
-    
+    display: none;
 }
 
 .slider{
@@ -200,15 +207,62 @@ body{
     font-size: 16px;
 }
 .child_itm_r2{
- text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    padding: 10px;
+    transition: 0.5s;
+    /* border: 1px solid red; */
+
+}
+
+.child_itm_r2 img{
+    box-sizing: border-box;
+    width: 64px;
+    transition: 0.5s;
+    /* border: 1px solid red; */
+
+}
+
+.child_itm_r2:hover{
+    background-color: transparent;
+}
+.child_itm_r2:hover.child_itm_r2 img{
+    background-color: #fff;
+    border-radius: 20%;
+    padding: 5px;
+    z-index: 10;
+}
+.transition{
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.child_itm_r2:hover div{
+ height: 80%;
+ width: 100%;
+ border: 1px solid #65717c;
+ background-color: #fff;
+ /* background-color: #fff; */
+}
+.child_itm_r2 h3{
+    
+    z-index: 12;
+    
 }
 .child_itm_r2 p{
     text-align: justify;
+    z-index: 13;
+    
+    /* border: 1px solid red; */
 }
-.child_itm_r2 img{
-    width: 64px;
-    padding: 10px;
-   }
+
 /* -----------------
     row 3
 -------------------- */
@@ -292,9 +346,10 @@ body{
 }
 .child-item_r5 form input{
     margin: 5px 0;
-    padding: 5px;
+    padding: 5px 10px;
     width: 100%;
     border: none;
+    outline: none;
     background: #dfe4ea;
 }
 .child-item_r5 form input[type="submit"]{
