@@ -4,8 +4,21 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .inner_r2 {
+    grid-template-columns: 1fr 1fr;
+  }
 
 }
+@media only screen and (max-width:700px){
+  .inner_r5 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .child-item_r5:nth-child(3){
+    display: none;
+  }
+}
+  
+
 
 @media only screen and (max-width:500px){
 
