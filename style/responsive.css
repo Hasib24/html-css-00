@@ -1,12 +1,15 @@
 @media only screen and (max-width:500px){
+
+.inner_top {
+  display: flex;
+  align-items: center;
+  
+}
 .container{
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   grid-gap: 30px;   
   text-align: center;   
-}
-.inner_r5,.inner_r6{
-  text-align: left;
-}
-}
+ }
+
 }
